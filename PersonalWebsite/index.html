@@ -3,9 +3,13 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <script src="https://use.fontawesome.com/d1341f9b7a.js"></script>
-    <link rel="stylesheet" href="style.css">        
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" contents="width=device-width, initial-scale=1.0">
     <title>Personal Website</title>
+
+    <script src="https://use.fontawesome.com/d1341f9b7a.js"></script>
+    <link rel="stylesheet" href="style.css">  
+    <script defer src="app.js"></script>      
   </head>
     <body>
         <div class="main">
@@ -15,16 +19,21 @@
                   <li><a href="./index.html">Home</a></li>
                   <li><a href="#aboutme">About Me</a></li>
                   <li><a href="#GetToKnowMe">Get To Know Me</a></li>
+                  <li><a href="./calculator.html">Calculator</a></li>
                   <li><a href="./contactme.html">Contact Information</a></li>
                 </ul>
               </div>
             </nav>
+            <div>
+              <br>
+              <h1 class="header">Darius Dahl's Personal Website</h1>
+            </div>
         <div class="box-profile-summary">
             <img src="Photos/ProfessionalPhotoOfMe.jpeg" alt="Photo of me" class="box-img">
             <h1>Darius Dahl</h1>
-            <h5>Web Developer - Web Designer</h5>
+            <h5>Software Developer - Web Designer</h5>
             <p>
-                Computer science student who has a willingness to learn and a positive mental attitude, looking to gain real-world experience with front-end development. 
+                Computer science student who has a willingness to learn and a positive mental attitude, looking to gain real-world experience with front-end and software development. 
             </p>
             <ul>
                 <li><a href="https://www.linkedin.com/in/darius-dahl-a19bb9252/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
@@ -33,12 +42,14 @@
             </ul>
         </div>
         <div id="aboutme">
-            <h1>About Darius Dahl</h1>
-              <h2>Who Am I?</h2>
+          <div class="hidden">
+            <h1 class="aboutme">About Darius Dahl</h1>
+              <h2 class="aboutme">Who Am I?</h2>
               <div>
-                <p>
+                <p class="aboutme">
                   I am currently a Junior attending <a href="https://www.marquette.edu/" target="_blank">Marquette University</a> on my path to attaining a computer science major and physics minor.
                 </p>
+          </div>
               </div>  
               <div class="box-classes">
               <h1>Relevant Courses I Have Taken</h1>
@@ -79,8 +90,43 @@
             </div>
             </div>
             <div id="GetToKnowMe">
+            <div class=" aboutme hidden">
               <h1>Get To Know Me!</h1>
               <h2>Things I Enjoy Doing In My Free Time</h2>
+            </div>
+            <h2>Playing Video Games</h2>
+              <div class="media-scroller snaps-inline">
+                <div class="media-element">
+                  <img src="https://wallpapers.com/images/featured/minecraft-s2kxfahyg30sob8q.jpg" alt="Minecraft" class="img">
+                  <p class="title">Minecraft</p>
+                </div>
+                <div class="media-element">
+                  <img src="https://i.imgur.com/jKUhuqj.jpg" alt="Mario Kart 8 Deluxe" class="img">
+                  <p class="title">Mario Kart 8 Deluxe</p>
+                </div>
+                <div class="media-element">
+                  <img src="https://images3.alphacoders.com/993/thumb-1920-993664.png" alt="Mario Maker 2" class="img">
+                  <p class="title">Mario Maker 2</p>
+                </div>
+                <div class="media-element">
+                  <img src="https://www.godisageek.com/wp-content/uploads/Breath-of-the-wild.jpg" alt="Breath of the Wild" class="img">
+                  <p class="title">Breath of the Wild</p>
+                </div>
+                <div class="media-element">
+                  <img src="https://external-preview.redd.it/the-legend-of-zelda-tears-of-the-kingdom-is-the-heaviest-v0-njOBOpfWljp2xHydGfnHFuN_HyG3igedDLB5tvOQ4IY.jpg?auto=webp&s=d1bba4c27d1b8e672eedffa5ba57ec485cdc1e16" alt="Tears of the Kingdom" class="img">
+                  <p class="title">Tears of the Kingdom</p>
+                </div>
+                <div class="media-element">
+                  <img src="https://c4.wallpaperflare.com/wallpaper/440/883/668/the-elder-scrolls-v-skyrim-title-hd-wallpaper-preview.jpg" alt="Skyrim" class="img">
+                  <p class="title">Skyrim</p>
+                </div>
+                <div class="media-element">
+                  <img src="https://wallpapers.com/images/featured/fallout-4-fez4gn3kgqco8xyu.jpg" alt="Fallout 4" class="img">
+                  <p class="title">Fallout 4</p>
+                </div>
+              </div>
+              <br>
+              <br>  
               <ul>
                 <li>Hanging Out With My Friends</li>
                 <li>Expanding My Knowledge</li>

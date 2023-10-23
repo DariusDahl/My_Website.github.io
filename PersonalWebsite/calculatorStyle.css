@@ -1,0 +1,90 @@
+h1, h2, h3, h4, h5, h6, td, th, li, a {
+    color : rgb(255, 255, 255);
+}
+html, body {
+    width: 100%;
+    height : 100%;
+    position: relative;
+    overflow: auto;
+    overflow-y: scroll;
+    overflow-x: visible;
+    background: linear-gradient(to right bottom, #9c27b0, #2a9baf);
+}
+p, ul, ol, li {
+    color: rgb(255, 255, 255);
+    line-height: 1.5;
+}
+table, td, th {
+    border: 1px solid rgb(255, 255, 255);
+    text-align: center;
+    
+}
+style {
+    table {
+        border-right : 0px;
+        overflow : auto;
+    }
+}
+.nav{
+    width: 80%;
+    position: sticky;
+    margin: 20px auto;
+    z-index: 1;
+    display: flex;
+    align-items: center;    
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+}
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+}
+.header{
+    text-align: center;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.calculator{
+    background: #3a4452;
+    padding: 20px;
+    border-radius: 10px;
+}
+.calculator form input{
+    border: 0;
+    outline: 0;
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.2);
+    background: transparent;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+    margin: 10px;
+}
+form .display{
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 0;
+}
+form .display input{
+    text-align: right;
+    flex: 1;
+    font-size: 45px;
+    box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+form input.operator{
+    color: #33ffd8;
+}

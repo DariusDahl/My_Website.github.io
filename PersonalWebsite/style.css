@@ -18,12 +18,23 @@ table, td, th {
     border: 1px solid rgb(255, 255, 255);
     text-align: center;
     
-  }
+}
 style {
     table {
         border-right : 0px;
         overflow : auto;
     }
+}
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
 }
 .nav{
     width: 80%;
@@ -45,6 +56,9 @@ style {
 .nav-links ul li a{
     color: #fff;
     text-decoration: none;
+}
+.header {
+    text-align: center;
 }
 .box-img{
     border-radius: 50%;
@@ -94,6 +108,9 @@ style {
 .box-profile-summary li a:hover{
     color: #b9b9b9;
 }
+.aboutme {
+    text-align: center;
+}
 .box-classes{
     width: 90%;
     background: rgba(0, 0, 0, 0.4);
@@ -135,4 +152,45 @@ style {
 }
 .box-classes li a:hover{
     color: #b9b9b9;
+}
+.media-scroller {
+    --spacer: 1rem;
+    display: grid;
+    gap: var(--spacer);
+    grid-auto-flow: column;
+    grid-auto-columns: 23%;
+
+    padding: 0 var(--spacer) var(--spacer);
+
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+}
+.snaps-inline {
+    scroll-snap-type: inline mandatory;
+    scroll-padding-inline: var(--spacer, 1rem);
+}
+.snaps-inline > * {
+    scroll-snap-align: start;
+}
+.media-element {
+    display: grid;
+    grid-template-rows: min-content;
+    gap: var(--spacer);
+    padding: var(--spacer);
+    background: var(--spacer);
+    border-radius: var(--spacer);
+    box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+.media-element > img {
+    display: grid;
+    grid-template-rows: min-content;
+    gap: var(--spacer);
+    inline-size: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+}
+.img {
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
