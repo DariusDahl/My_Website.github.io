@@ -158,7 +158,7 @@ style {
     display: grid;
     gap: var(--spacer);
     grid-auto-flow: column;
-    grid-auto-columns: 23%;
+    grid-auto-columns: 28%;
 
     padding: 0 var(--spacer) var(--spacer);
 
@@ -179,7 +179,7 @@ style {
     padding: var(--spacer);
     background: var(--spacer);
     border-radius: var(--spacer);
-    color:#9c27b0;
+    background: linear-gradient(to right bottom, #082cac, #09b15d);
     box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.2);
 }
 .media-element > img {
