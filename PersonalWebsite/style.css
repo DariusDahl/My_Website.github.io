@@ -11,6 +11,8 @@ html, body {
     background: linear-gradient(to right bottom, #9c27b0, #2a9baf);
 
     overflow-y: auto;
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
     overscroll-behavior-y: contain;
 }
 p, ul, ol, li {
